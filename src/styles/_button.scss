@@ -1,0 +1,18 @@
+@import './colors';
+
+.primary-btn {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,91,121,1) 0%, rgba(3,212,255,1) 100%);
+    color: $white;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+    &:disabled {
+        opacity: 0.3;
+    }
+}

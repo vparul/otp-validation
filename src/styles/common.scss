@@ -1,0 +1,51 @@
+@import "./index.scss";
+
+.flex {
+  display: flex;
+  &.column {
+    flex-direction: column;
+  }
+  &.items-end {
+    align-items: flex-end;
+  }
+}
+.page-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.color-white {
+  color: $white;
+}
+.heading {
+  color: $secondary;
+  text-align: center;
+}
+.form-container {
+  overflow: auto;
+  padding: 20px 30px;
+  border-radius: 20px;
+  min-height: 45%;
+  max-height: 60%;
+  width: 30%;
+  background-color: $white;
+}
+.label {
+  line-height: 2;
+  color: $secondary;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.validation-form {
+  height: 180px;
+  .button-container {
+      margin-top: 50px;
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../styles/index.scss';
+
+.field-input {
+    width: calc(100% - 20px);
+    line-height: 2.5;
+    background-color: $light-grey;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: $secondary;
+    &:focus-visible {
+        color: $secondary;
+        border: 1px solid $secondary;
+        outline: 1px solid $secondary;
+    }
+}
+.error {
+    color: $red;
+    font-size: 12px;
+    margin: 5px 0;
+}
