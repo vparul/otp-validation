@@ -2,6 +2,7 @@ import React, { ReactElement, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { Formik, Form } from "formik";
+import { MdArrowBackIosNew } from "react-icons/md"
 import * as Yup from "yup";
 import Button from "../../components/Button/Button";
 import FieldInput from "../../components/FieldInput/FieldInput";
@@ -63,6 +64,9 @@ const ValidateOTP = (): ReactElement => {
                   disabled={!(isValid && dirty)}
                 />
               </div>
+              <a className="link" href="/" onClick={history.goBack}>
+                <MdArrowBackIosNew size={8} />
+                Back</a>
             </Form>
           )}
         </Formik>

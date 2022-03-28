@@ -49,3 +49,14 @@
       margin-top: 50px;
   }
 }
+.link {
+  color: $secondary;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 10px;
+  svg {
+    margin-top: 2px;
+  }
+}
